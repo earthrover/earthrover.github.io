@@ -1,0 +1,77 @@
+---
+layout: default
+---
+  <div class="hero">
+
+      <img class="hero" src="/assets/hero.jpg"/>
+
+  </div>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">lightbulb_outline</i></h2>
+            <h5 class="center">Data</h5>
+
+            <p class="light">We use robots to monitor every plant and to weed, feed and tend crops efficiently and precisely.
+              We gather data from the fields and provide analysis and planning tools to help farmers improve their productivity.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">nature_people</i></h2>
+            <h5 class="center">Farmers</h5>
+
+            <p class="light">Automonous Farming doesn't just mean swarms of smart robots tending crops.
+              It also means supporting autonomy for farmers, ensuring that they can own and control their technology and their farm's data.
+              Earth Rover are committed to using technology to empower farmers the world over.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Robots</h5>
+            <p class="light">Our robots have been designed by robotics engineers from the European Mars Rover programme. Robust, light-weight and energy efficient these robots, with on-board AI and precision tools,
+              open up a new era of farming technology.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      
+    </div>
+
+  <div class="hero" style="background: #ddd">
+
+      <img class="hero" src="/assets/earth_rover_smaller.jpg"/>
+
+  </div>
+
+    <div style="background: #ddd">
+    <div class="container last-post">
+    <section>
+        <h5>News</h5>
+        <ul class="collection">
+        {% for post in site.posts %}
+        <li class="collection-item avatar">
+          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+          <div class="date-post">{{ post.date | date: date_format }}</div>
+          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+          <p>
+             {{ post.content | truncatewords: 10 }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        {% endfor %}
+        </ul>  
+    </section>
+    </div>
+</div>
+
+  </div>

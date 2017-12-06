@@ -1,0 +1,11 @@
+title: Earth Rover
+author: Paul Harter
+email: panoramedia@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Earth Rover website
+
+twitter_username: paulharter
+github_username:  paulharter
+
+sass:
+    style: compressed
