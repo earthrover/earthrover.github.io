@@ -21,83 +21,406 @@
 
   <body>
 
-          <div class="hero">
+  <nav class="rover" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" class="brand-logo" href="/">
+            <img class="brand-image" src="/assets/earth_rover_logotype_white.png"/>
+        </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home </a></li>
+             <li><a href="#technology">Precision Farming </a></li>
+              <li><a href="#team">Team </a></li>
+              <li><a href="#partners">Partners </a></li>
+              <li><a href="#investors">Investors </a></li>
 
-      <img class="hero" src="/assets/hero.jpg"/>
+          </ul>
 
-  </div>
-  <div class="container">
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Home </a></li>
+             <li><a href="/#technology">Precision Farming </a></li>
+              <li><a href="/#team">Team </a></li>
+              <li><a href="#partners">Partners </a></li>
+              <li><a href="#investors">Investors </a></li>
+          </ul>        
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+        <div class="hero">
+
+    <img id="topimg" class="hero" src="/assets/field_clear.jpg"/>
+    <div id="logo">
+        <img id="er_logo" src="/assets/earth_rover_complete_white.jpg"/>
+
+    </div>
+
+</div>
+
+<div class="container">
+
     <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">lightbulb_outline</i></h2>
-            <h5 class="center">Data</h5>
-
-            <p class="light">We use robots to monitor every plant and to weed, feed and tend crops efficiently and precisely.
-              We gather data from the fields and provide analysis and planning tools to help farmers improve their productivity.
+        <a name="technology" class="anchor"></a>
+        <!--   Icon Section   -->
+        <div class="section_header">
+            <h4 class="underline">Precision Farming </h4>
+            <p class="light">Earth Rover is creating a new farming ecosystem, swarms light-weight autonomous farm
+                vehicles, carrying precision tools and guided by an intellegent data platform.
             </p>
-          </div>
         </div>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center rover-green-text"><i class="material-icons">lightbulb_outline</i></h2>
+                    <h5 class="center">Data</h5>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">nature_people</i></h2>
-            <h5 class="center">Farmers</h5>
+                    <p class="light">We use Earth Rover's robots to monitor every plant and to weed, feed and tend crops
+                        efficiently
+                        and precisely.
+                        We gather data from the fields and provide analysis and planning tools to help farmers improve
+                        their productivity.
+                    </p>
+                </div>
+            </div>
 
-            <p class="light">Automonous Farming doesn't just mean swarms of smart robots tending crops.
-              It also means supporting autonomy for farmers, ensuring that they can own and control their technology and their farm's data.
-              Earth Rover are committed to using technology to empower farmers the world over.</p>
-          </div>
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center rover-green-text"><i class="material-icons">nature_people</i></h2>
+                    <h5 class="center">Farmers</h5>
+
+                    <p class="light">Earth Rover's open and extensible platform helps farmers control their
+                        technology and their farm's data.
+                        Earth Rover are committed to using technology to empower farmers the world over.</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center rover-green-text"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Robots</h5>
+                    <p class="light">Our robots have been designed by robotics engineers from the European Mars Rover
+                        programme. Robust, light-weight and energy efficient these robots, with on-board AI and
+                        precision tools,
+                        open up a new era of farming technology.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Robots</h5>
-            <p class="light">Our robots have been designed by robotics engineers from the European Mars Rover programme. Robust, light-weight and energy efficient these robots, with on-board AI and precision tools,
-              open up a new era of farming technology.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-      
-    </div>
-
-  <div class="hero" style="background: #ddd">
-
-      <img class="hero" src="/assets/earth_rover_bigger.jpg"/>
-
-  </div>
-
-    <div style="background: #ddd">
-    <div class="container last-post">
-    <section>
-        <h5>News</h5>
-        <ul class="collection">
-        
-        </ul>  
-    </section>
     </div>
 </div>
 
-  </div>
+<div class="hero" style="background: #ddd">
+
+    <div id="player"></div>
+    <script src="https://luwes.github.io/vimeowrap.js/vimeowrap.js"></script>
+    <script>
+        vimeowrap('player').setup({
+            urls: [
+                "https://player.vimeo.com/external/247696293.hd.mp4?s=2d77ce511805543c3b3f6a77ccb74abfc887c450&profile_id=174"
+            ]
+        });
+    </script>
+
+</div>
+
+<div class="block">
+    <a name="team" class="anchor"></a>
+    <div class="container">
+        <section>
+            <div class="section_header"><h4 class="underline">Team</h4></div>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <img class="team" src="/assets/james.jpg">
+                        <h6 class="center">James Arthur - Director</h6>
+                        <p class="light">James is a software developer and serial technology entrepreneur.
+                            Previously co-founder and CTO of Wiki-House and Opendesk.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <img class="team" src="/assets/luke.jpg">
+                        <h6 class="center">Luke Robinson - Chief Scientist</h6>
+                        <p class="light">Luke has a PhD in Physics for research work in quantum computing from
+                            Cambridge University and has held research fellowships at both Cambridge and Oxford
+                            Universities
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <img class="team" src="/assets/paul.jpg">
+                        <h6 class="center">Paul Harter - CTO, Product & Strategy</h6>
+                        <p class="light">
+                            Paul is a developer and digital toolmaker specialising in robotics,
+                            open hardware and digital manufacturing. He previously created Printcraft and Smartdesk
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <img class="team" src="/assets/alina.jpg">
+                        <h6 class="center">Alina Costache - CMO & Investment</h6>
+                        <p class="light">Alina is a branding & communications specialist. She
+                            founded and runs Odyssey PR, a boutique consultancy in
+                            London advising clients on strategy & positioning.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <img class="team" src="/assets/sergio.jpg">
+                        <h6 class="center">Sergio​ ​Martinez - Lead Engineer</h6>
+                        <p class="light">Sergio is a serial CTO and highly skilled software and hardware developer.
+                            Previously at FlickTek, he was a senior architect/engineer at Intel, Blinkx & Autonomy
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <img class="team" src="/assets/juan.jpg">
+                        <h6 class="center">Juan Esteban Paz - Engineer</h6>
+                        <p class="light">Juan is a Mechatronic Engineer with extensive experience in farming and
+                            automatated systems for handling crops.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <a name="partners" class="anchor"></a>
+        <section>
+
+
+            <div class="row">
+                <div class="col">
+                    <div class="section_header"><h4 class="underline">Research Partners</h4>
+                        <p class="light">Earth Rover has close working relationships with the UK's leading experts in the
+                            fields of Autonomous Robotics, Precision Farming systems and innovative Organic Farming.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <img class="org" src="/assets/harper.png">
+                        <p class="light">National Centre for Precision Farming at Harper Adams is
+                            the UK's leading research centre robotic and presision farming. We’re collaborating with and
+                            advised by:
+                            Professor Simon Blackmore, Head of Robotic Agriculture, and
+                            Sam Wane, Senior Lecturer in Mechatronics and Robotics.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <img class="org" src="/assets/ral.png">
+                        <p class="light">
+                            We’re working with the space engineers at the Rutherford Appleton Laboratory's Autonomous Systems Group, who designed
+                            the ExoMars Rover’s autonomous driving systems and have adapted it for agricultural use as Earth Rover:
+                            Aron Kisdi, Senior Space Systems Engineer
+                            Wayne Tubby, Lead Robotics Hardware Engineer.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <img class="org" src="/assets/polybell.png">
+                        <p class="light">We're working closely with Polybell Farms, who are one of the UK's largest Organic
+                            Farmers and pioneers of the application of innovative technology to crop management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="block">
+    <a name="investors" class="anchor"></a>
+    <div class="container">
+        <section>
+            <div class="section_header underline"><h4>Investors</h4></div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="investor-block">
+                        <img class="investor" src="/assets/posturban_logo.png">
+                         <p class="light">
+                        Post Urban Ventures is a Midlands-based startup incubator, focused on hard-tech and artificial intelligence, that collaborates with some of the UK's leading research instituions.
+                         </p>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="investor-block">
+                        <img class="investor" src="/assets/esa_logo.png">
+                        <p class="light">
+                            Part of a Europe-wide network, the ESA Business Incubation Centre (BIC)
+                            Harwell provides the support that start-ups and research teams
+                            need to turn technologies designed to advance space exploration into
+                            profitable products and services for non-space markets.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <section>
+            <div class="section_header"><h4 class="underline">Location</h4>
+                <p class="light">We're a UK company based in the Rutherford Appleton Laboratory Harwell Campus in
+                    Oxfordshire.
+                </p>
+                <p class="light address">
+                    G27 Atlas Building<br>
+                    Fermi Avenue<br>
+                    Harwell Campus<br>
+                    Didcot OX11 0QS<br>
+                    UK
+                </p>
+            </div>
+            <div class="row">
+                <!--div class="col-sm-6">
+                    <div id="cardiff-map" class="location-map mt20">
+                    </div>
+                </div-->
+                <!--div class="col-sm-6"-->
+                <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <div id="harwell-map" class="location-map mt20">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+<!--<div style="background: #ddd">-->
+<!--<div class="container last-post">-->
+<!--<section>-->
+<!--<h5>News</h5>-->
+<!--<ul class="collection">-->
+<!---->
+<!--</ul>-->
+<!--</section>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<script type="text/javascript">
+    function initMap() {
+        var mapOptions1 = {
+            zoom: 16,
+            zoomControl: true,
+            scaleControl: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true,
+            center: new google.maps.LatLng(51.464783, -3.163191),
+            styles: [{
+                "featureType": "landscape",
+                "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]
+            }, {
+                "featureType": "poi",
+                "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]
+            }, {
+                "featureType": "road.highway",
+                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
+            }, {
+                "featureType": "road.arterial",
+                "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]
+            }, {
+                "featureType": "road.local",
+                "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]
+            }, {
+                "featureType": "transit",
+                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
+            }, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {
+                "featureType": "water",
+                "elementType": "labels",
+                "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]
+            }, {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]
+            }]
+        };
+        /*
+         var mapElement1 = document.getElementById('cardiff-map');
+         var map1 = new google.maps.Map(mapElement1, mapOptions1);
+         var marker1 = new google.maps.Marker({
+         position: new google.maps.LatLng(51.464783, -3.163191),
+         map: map1,
+         title: 'Cardiff Office'
+         });
+         */
+        var mapOptions2 = {
+            zoom: 15,
+            zoomControl: true,
+            scaleControl: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true,
+            center: new google.maps.LatLng(51.575318, -1.314668),
+            styles: [{
+                "featureType": "landscape",
+                "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]
+            }, {
+                "featureType": "poi",
+                "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]
+            }, {
+                "featureType": "road.highway",
+                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
+            }, {
+                "featureType": "road.arterial",
+                "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]
+            }, {
+                "featureType": "road.local",
+                "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]
+            }, {
+                "featureType": "transit",
+                "stylers": [{"saturation": -100}, {"visibility": "simplified"}]
+            }, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {
+                "featureType": "water",
+                "elementType": "labels",
+                "stylers": [{"visibility": "on"}, {"lightness": -25}, {"saturation": -100}]
+            }, {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [{"hue": "#ffff00"}, {"lightness": -25}, {"saturation": -97}]
+            }]
+        };
+        var mapElement2 = document.getElementById('harwell-map');
+        var map2 = new google.maps.Map(mapElement2, mapOptions2);
+        var marker2 = new google.maps.Marker({
+            position: new google.maps.LatLng(51.575318, -1.314668),
+            map: map2,
+            title: 'Harwell Office'
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async
+        defer></script>
+
 
       <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Earth Rover was formed in 2017 to develop precision robotic farming tools</p>
-        </div>
-        <div class="col l6 s12">
           <h5 class="white-text">Contacts</h5>
           <ul>
-              <li>email: <a class="white-text" href="mailto:info@earthrover.cc">info@earthrover</a></li>
-              <li>twitter: <a class="white-text" href="https://twitter.com/earth_rover">@earthrover</a></li>
+              <li>email: <a class="white-text" href="mailto:info@earthrover.cc">info@earthrover.cc</a></li>
           </ul>
         </div>
       </div>
@@ -106,7 +429,8 @@
         <div class="container">
             <div>
                 <span style="text-align: right; float: right">
-                Copyright © 2017 Earth Rover Ltd. Powered by <a target="_blank" href="http://jekyllrb.com/" class="orange-text text-lighten-3">Jekyll</a>
+                Copyright © 2017 Earth Rover Ltd. All rights reserved.
+                    <a target="_blank" href="https://beta.companieshouse.gov.uk/company/10864067" class="orange-text text-lighten-3">UK company number 10864067</a>
                 </span>
             </div>
         </div>

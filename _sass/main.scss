@@ -1,5 +1,36 @@
 @charset "utf-8";
 
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+$navbar-height: 64px !default;
+$navbar-line-height: $navbar-height !default;
+$navbar-height-mobile: 56px !default;
+$navbar-line-height-mobile: $navbar-height-mobile !default;
+$navbar-font-size: 1rem !default;
+$navbar-font-color: #fff !default;
+$navbar-brand-font-size: 2.1rem !default;
+
+// Header Styles
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.92rem !default;
+$h4-fontsize: 2.28rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1.3rem !default;
+
 h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
 }
@@ -75,7 +106,10 @@ img.brand-image {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    width: 250px;
+    width: 200px;
+    margin-top:-10px;
+    position:relative;
+    top: -4px;
 }
 
 img.header-image {
@@ -86,11 +120,158 @@ img.hero {
     width: 100%;
 }
 
+img.team{
+    width: 90%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-color: #888888;
+    border-style: solid;
+    border-width: 1px;
+}
+
+img.org{
+    width: 90%;
+}
+
+.investor-block{
+    text-align: center;
+}
+
+img.investor{
+    width: 60%;
+}
+
 footer.page-footer{
 
     //background: #e0fd35;
     background: #bad22c;
 }
+
+#harwell-map{
+    width: 100%;
+    height: 300px;
+}
+
+nav.rover{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: #849628;
+    //background-image: url("/assets/banner.jpg");
+}
+
+.rover-green-text{
+    color: #849628;
+}
+
+#topimg{
+     margin-top:$navbar-height-mobile;
+}
+
+#logo{
+    position: absolute;
+    width: 50%;
+    top: 80px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+}
+
+
+#er_logo{
+
+    width: 60%;
+
+}
+
+#precision{
+    font-size: 20px;
+}
+
+@media #{$medium-and-up} {
+  #topimg{
+    margin-top:$navbar-height;
+  }
+    #logo{
+        width: 45%;
+        top: 120px;
+    }
+
+img.brand-image {
+    width: 270px;
+    top: 0px;
+}
+}
+
+@media #{$medium-only}{
+    #precision{
+        margin-top: 30px;
+        font-size: $h4-fontsize
+    }
+}
+
+@media #{$large-and-up}{
+    #precision{
+        margin-top: 60px;
+        font-size: $h3-fontsize;
+    }
+}
+
+.section_header{
+    width: 100%;
+    text-align: center;
+    margin-top:0px;
+    margin-bottom:30px;
+}
+
+
+h6{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+section{
+    padding-bottom:20px;
+    padding-top:20px;
+}
+
+
+h4{
+    margin-top: 0px;
+
+}
+
+.block{
+    background: #ddd;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+}
+
+
+
+.underline{
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px;
+    border-bottom-color: #849628;
+    border-bottom-style: solid;
+}
+
+
+.address{
+    font-weight: bold;
+}
+
 
 //div.hero {
 //    background-image: url("/assets/hero.jpg");
