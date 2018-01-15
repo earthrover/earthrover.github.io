@@ -120,13 +120,19 @@ img.hero {
     width: 100%;
 }
 
-img.team{
+.team-img-container {
+    text-align: center;
+}
+img.team {
     width: 90%;
+    max-width: 180px;
+    margin: 0 auto 10px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-color: #888888;
     border-style: solid;
     border-width: 1px;
+    filter: grayscale(0.85);
 }
 
 img.org{
@@ -158,7 +164,7 @@ nav.rover{
     top: 0;
     width: 100%;
     z-index: 1;
-    background: #849628;
+    background: rgba(132,150,40, 0.8);
     //background-image: url("/assets/banner.jpg");
 }
 
@@ -182,10 +188,19 @@ nav.rover{
 }
 
 
-#er_logo{
-
-    width: 60%;
-
+#er_logo {
+    width: 50%;
+    display: none;
+}
+@media #{$medium-and-up} {
+    #er_logo{
+        display: inline-block;
+    }
+}
+@media #{$large-and-up} {
+    #er_logo{
+        margin-top: 20px;
+    }
 }
 
 #precision{
@@ -221,16 +236,28 @@ img.brand-image {
     }
 }
 
-.section_header{
+.hero {
+    margin-top: -64px;
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section_header {
     width: 100%;
     text-align: center;
-    margin-top:0px;
-    margin-bottom:30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.section_header p {
+    font-size: 16.5px;
 }
 
 
-h6{
-    font-size: 1.2rem;
+h6 {
+    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 
@@ -246,7 +273,7 @@ h4{
 }
 
 .block{
-    background: #ddd;
+    background: #ededed;
 }
 
 a.anchor {
@@ -265,6 +292,7 @@ a.anchor {
     border-bottom: 1px;
     border-bottom-color: #849628;
     border-bottom-style: solid;
+    margin-bottom: 12px;
 }
 
 
@@ -272,9 +300,50 @@ a.anchor {
     font-weight: bold;
 }
 
-.video_wrapper{
-    width: 100%;
+.video_wrapper_container_container {
     text-align: center;
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+}
+.video_wrapper_container {
+    max-width: 656px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+.video_wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    height: auto;
+    max-width: 100%;
+    // width: 100%;
+    // text-align: center;
+}
+.video_wrapper iframe,
+.video_wrapper object,
+.video_wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+p.light.social-icons {
+    text-align: center;
+}
+
+.org {
+    margin-bottom: 15px;
+}
+@media #{$medium-and-up}{
+    .org {
+        margin-top: -15px;
+        margin-bottom: 0;
+    }
 }
 
 //div.hero {
