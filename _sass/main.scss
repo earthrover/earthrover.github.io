@@ -120,19 +120,29 @@ img.hero {
     width: 100%;
 }
 
+.team-member {
+    background: white;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 10px 20px;
+}
+.team-member p {
+    padding: 0 15px;
+}
 .team-img-container {
     text-align: center;
 }
 img.team {
-    width: 90%;
-    max-width: 180px;
+    width: 100%;
+    /*max-width: 357px;*/
     margin: 0 auto 10px;
-    -webkit-border-radius: 50%;
+    /* -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-color: #888888;
     border-style: solid;
     border-width: 1px;
     filter: grayscale(0.85);
+    */
 }
 
 img.org{
@@ -237,7 +247,7 @@ img.brand-image {
 }
 
 .hero {
-    margin-top: -64px;
+    /* margin-top: -64px; */
 }
 
 .section {
